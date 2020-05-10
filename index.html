@@ -31,9 +31,8 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- =========================Меню===================== -->
-	<div class="header__nav-wrapper">
+	<div id="top_nav" class="header__nav-wrapper">
 		<div class="header__nav-container">
 			<!-- =========================Логотип===================== -->
 			<div class="header__logo">
@@ -46,41 +45,77 @@
 			</div>
 			<!-- ===============кнопка меню бургер======================== -->
 			<nav class="header__nav __container">
-				<ul>
-					<li id="link-1"> <a href="#">mens<span><i class="fas fa-angle-down"></i></span></a>
-<!-- ===============Под меню======================== -->
-<div class="header__sab-menu">
-	<div class="sab-menu">
-		<div class="sab-menu__left">
-			<h2>casuals</h2>
-			<ul>
-				<li><a href="#">Jackets</a></li>
-				<li><a href="#">Hoodies & Sweatshirts</a></li>
-				<li><a href="#">Polo Shirts</a></li>
-				<li><a href="#">Sportswear</a></li>
-				<li><a href="#">Trousers & Chinos</a></li>
-				<li><a href="#">T-Shirts</a></li>
-			</ul>
-		</div>
-		<div class="sab-menu__right">
-			<h2>Formal</h2>
-			<ul>
-				<li><a href="#">Jackets</a></li>
-				<li><a href="#">Shirts</a></li>
-				<li><a href="#">Suits</a></li>
-				<li><a href="#">Trousers</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="header__sab-manu-sale">
-		<p>Autumn sale! up to 50% off </p>
-	</div>
-</div>
-<!-- ===============Под меню======================== -->					</li>
-					<li> <a href="#">womens<span><i class="fas fa-angle-down"></i></span></a></li>
-					<li> <a href="#">the brand<span><i class="fas fa-angle-down"></i></span></a></li>
-					<li><a href="#">local stores<span><i class="fas fa-angle-down"></i></span></a></li>
-					<li> <a href="#">look book<span><i class="fas fa-angle-down"></i></span></a></li>
+				<ul class="menu__list">
+					<li class="link-1"> <a href="#">mens<span><i class="fas fa-angle-down"></i></span></a>
+						<!-- ===============Под меню-1======================== -->
+						<ul class="header__sab-menu">
+							<li class="sab-menu">
+								<ul class="sab-menu__left">
+									<li>
+										<h2 class="title-sab-menu1">casuals</h2>
+										<ul class="sab-menu__sab1">
+											<li><a href="#">Jackets</a></li>
+											<li><a href="#">Hoodies & Sweatshirts</a></li>
+											<li><a href="#">Polo Shirts</a></li>
+											<li><a href="#">Sportswear</a></li>
+											<li><a href="#">Trousers & Chinos</a></li>
+											<li><a href="#">T-Shirts</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="sab-menu__right">
+									<li>
+										<h2 class="title-sab-menu2">Formal</h2>
+										<ul class="sab-menu__sab2">
+											<li><a href=" #">Jackets</a></li>
+											<li><a href="#">Shirts</a></li>
+											<li><a href="#">Suits</a></li>
+											<li><a href="#">Trousers</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="header__sab-manu-sale">
+								<p>Autumn sale! <br> up to 50% off </p>
+							</li>
+						</ul>
+						<!-- ===============Под меню-1======================== -->
+					</li>
+					<li class="link-2"> <a href="#">womens<span><i class="fas fa-angle-down"></i></span></a>
+					</li>
+					<li class="link-3"> <a href="#">the brand<span><i class="fas fa-angle-down"></i></span></a></li>
+					<li class="link-4"><a href="#">local stores<span><i class="fas fa-angle-down"></i></span></a></li>
+					<li class="link-5"> <a href="#">look book<span><i class="fas fa-angle-down"></i></span></a>
+						<!-- ===============Под меню-2======================== -->
+						<ul class="header__sab-menu header__sab-menu-end">
+							<li class="sab-menu">
+								<ul class="sab-menu__left">
+									<li>
+										<h2 class="title-sab-menu3">Our Lookbooks</h2>
+										<ul class="sab-menu__sab3">
+											<li><a href="#">Latest Posts (mixed)</a></li>
+											<li><a href="#">Men’s Lookbook</a></li>
+											<li><a href="#">Women’s Lookbook</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="sab-menu__right">
+									<li>
+										<h2 class="title-sab-menu4">Your Lookbook</h2>
+										<ul class="sab-menu__sab4">
+											<li><a href="#">View and Edit</a></li>
+											<li><a href="#">Share</a></li>
+											<li><a href="#">Delete</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="header__sab-manu-sale">
+								<p>Autumn sale! <br> up to 50% off </p>
+							</li>
+						</ul>
+						<!-- ===============Под меню-2======================== -->
+					</li>
 				</ul>
 			</nav>
 			<!-- =========================Поиск===================== -->
@@ -94,11 +129,20 @@
 			</div>
 			<!-- =========================Поиск===================== -->
 		</div>
+
 	</div>
-
-
-
-
+	<div class="header__title">
+		<div class="header__title-wrapper">
+			<h1>
+				<span>A</span>
+				<span>V</span>
+				<span>E</span>
+			</h1>
+			<div class="img-title"><img src="image/header/1.jpg" alt="title"></div>
+			<form action="#" target="_blank" method="post">
+				<button tupe="submit">shop men’s collection</button>
+		</div>
+	</div>
 
 
 </header>

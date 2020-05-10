@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.header__title button:hover {
+  color: #FFFFFF;
+  background-color: #00C8C8;
+  border: 2px solid #00C8C8;
+}
+
 /*=============Обнуление стилей CSS================*/
 * {
   padding: 0;
@@ -192,7 +198,7 @@ body {
   width: 45px;
   height: 45px;
   position: absolute;
-  margin-left: 8px;
+  margin-left: 7px;
 }
 @media screen and (max-width: 480px) {
   .header__register button:nth-child(1) {
@@ -498,6 +504,11 @@ body {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media (max-width: 1600px) {
+  .header__nav .menu__list > li > a {
+    font-family: "MontserratBold";
+  }
+}
 @media (max-width: 768px) {
   .header__nav .menu__list > li > a {
     color: #FFFFFF;
@@ -523,7 +534,7 @@ body {
     width: 35px;
     height: 25px;
     z-index: 6;
-    right: 60px;
+    right: 65px;
     top: 50%;
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
@@ -798,27 +809,114 @@ body {
   margin-top: 15px;
 }
 
-.header__title-wrapper h1 {
+.header__title {
+  position: relative;
+  height: 819px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 1100px) {
+  .header__title {
+    height: 521px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title {
+    height: 331px;
+  }
+}
+.header__title h1 {
   font-size: 450px;
   font-family: "ProximaNova-Bold";
   color: #575153;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
   z-index: 1;
 }
-.img-title {
+@media screen and (max-width: 1100px) {
+  .header__title h1 {
+    font-size: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title h1 {
+    font-size: 120px;
+    margin: 20px 0px 30px 0px;
+  }
+}
+.header__title h1 span:nth-child(2) {
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .header__title h1 span:nth-child(2) {
+    margin-left: 0;
+  }
+}
+.header__title img {
   display: block;
   position: absolute;
-  top: -40px;
-  left: 0px;
-  z-index: 0;
+  top: -100px;
+  left: 12.2%;
 }
-
+@media screen and (max-width: 1100px) {
+  .header__title img {
+    width: 600px;
+    top: -50px;
+    left: 0;
+    opacity: 0.9;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title img {
+    width: 300px;
+    top: 46px;
+  }
+}
+.header__title button {
+  position: relative;
+  z-index: 1;
+  width: 340px;
+  height: 60px;
+  font-size: 16px;
+  color: #454647;
+  background-color: #F8F8F8;
+  border: 2px solid #737373;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  float: right;
+  display: block;
+  margin-right: 20%;
+}
+@media screen and (max-width: 1100px) {
+  .header__title button {
+    float: none;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__title button {
+    width: 280px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
 /*================Подключение header================*/

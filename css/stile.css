@@ -1301,3 +1301,210 @@ body {
 }
 
 /*===========================Lookbook===========================*/
+.lookbook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 1700px) {
+  .lookbook {
+    display: block;
+    max-width: 1170px;
+    margin: 10px auto;
+  }
+}
+
+.lookbook__men, .lookbook__women, .lookbook__you {
+  background-color: #F8F8F8;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 60px 0px 45px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+@media screen and (max-width: 1700px) {
+  .lookbook__men, .lookbook__women, .lookbook__you {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .lookbook__men, .lookbook__women, .lookbook__you {
+    padding: 0px 10px 0px 10px;
+  }
+}
+
+.lookbook__men, .lookbook__women {
+  margin-right: 30px;
+}
+@media screen and (max-width: 1700px) {
+  .lookbook__men, .lookbook__women {
+    margin: 10px;
+  }
+}
+
+.lookbook__img, .lookbook__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 45%;
+          flex: 1 0 45%;
+}
+
+.lookbook__content {
+  padding: 55px 0px 145px 0px;
+}
+@media screen and (max-width: 480px) {
+  .lookbook__content {
+    padding: 20px 0px 20px 0px;
+  }
+}
+.lookbook__content h2 {
+  font-size: 48px;
+  color: #575153;
+  font-family: "MontserratBold";
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 580px) {
+  .lookbook__content h2 {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+}
+.lookbook__content h2 span {
+  font-family: "MontserratLight";
+}
+.lookbook__content p {
+  font-size: 15px;
+  color: #727272;
+  line-height: 1.4;
+  font-family: "RobotoRegular";
+}
+@media screen and (max-width: 480px) {
+  .lookbook__content p {
+    font-size: 13px;
+    line-height: 1.1;
+    text-align: justify;
+    text-indent: 10px;
+  }
+}
+.lookbook__content button {
+  font-size: 16px;
+  color: #454647;
+  text-transform: uppercase;
+  padding: 20px 33px;
+  width: 180px;
+  background-color: #F8F8F8;
+  margin-top: 30px;
+  border: 2px solid #737373;
+  -webkit-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+@media screen and (max-width: 480px) {
+  .lookbook__content button {
+    font-size: 14px;
+    padding: 10px 20px;
+    width: 150px;
+  }
+}
+.lookbook__content button:hover {
+  color: #F8F8F8;
+  background-color: #00C8C8;
+  border-color: #00C8C8;
+}
+
+.lookbook__img.ibg {
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.lookbook__img.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*===========================footer===========================*/
+.footer {
+  background-color: #F8F8F8;
+}
+
+.footer__menu {
+  padding: 60px 0px;
+}
+@media screen and (max-width: 880px) {
+  .footer__menu {
+    padding: 20px 0px;
+  }
+}
+.footer__menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 1170px) {
+  .footer__menu > ul {
+    padding: 0px 10px 0px 10px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .footer__menu > ul {
+    display: block;
+  }
+}
+.footer__menu > ul > li > a {
+  color: #575153;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 880px) {
+  .footer__menu > ul > li > a {
+    border: 1px solid #000000;
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 5px 0px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 880px) {
+  .footer__menu .footer__list {
+    position: relative;
+  }
+}
+.footer__menu .footer__list .fa-angle-down {
+  display: none;
+}
+@media screen and (max-width: 880px) {
+  .footer__menu .footer__list .fa-angle-down {
+    display: block;
+    color: #575153;
+    font-size: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.footer__menu .footer__list ul li {
+  font-size: 14;
+  color: #727272;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.footer__menu .footer__list ul li a {
+  font-size: 14;
+  color: #727272;
+}
+
+/*===========================footer===========================*/

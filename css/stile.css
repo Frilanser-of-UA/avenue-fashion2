@@ -124,6 +124,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-style: normal;
 }
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato-Light.eot");
+  src: local("☺"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype"), url("../fonts/Lato-Light.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
 /*================Подключение шрифтов================*/
 body {
   font-family: "MontserratRegular", Arial, Helvetica, sans-serif;
@@ -1074,9 +1081,10 @@ body {
 }
 
 .kontent__item5 {
+  position: relative;
   margin-right: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .kontent__item5:hover .kontent__info {
     display: block;
   }
@@ -1160,7 +1168,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 @media screen and (max-width: 768px) {
   .ibg {
@@ -1199,6 +1206,22 @@ body {
   .kontent__item3.ibg, .kontent__item4.ibg {
     background-size: cover;
   }
+}
+
+.kontent__item5-img-1 {
+  width: 19%;
+  top: 15px;
+  right: 15px;
+  padding-top: 23.9%;
+  margin: 15px 15px 15px 77%;
+}
+
+.kontent__item5-img-2 {
+  width: 19%;
+  top: 130px;
+  right: 15px;
+  padding-top: 23.9%;
+  margin: 15px 15px 15px 77%;
 }
 
 .kontent__item6.ibg {
